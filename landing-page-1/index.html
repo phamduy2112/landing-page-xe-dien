@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VOLT MOTO | Mùa Hè Rực Rỡ - Cùng Con Đến Trường</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #ffffff;
+            color: #1a1c1c;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e2e2e2",
+                        "primary": "#FF5C00",
+                        "on-surface": "#1a1c1c",
+                        "tertiary": "#0054d6",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#00266a",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2f3131",
+                        "tertiary-fixed-dim": "#b3c5ff",
+                        "surface-dim": "#dadada",
+                        "on-secondary-fixed-variant": "#474746",
+                        "tertiary-container": "#618dff",
+                        "secondary": "#5f5e5e",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#521800",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#ffdbce",
+                        "on-primary-fixed-variant": "#802a00",
+                        "on-primary-fixed": "#370e00",
+                        "background": "#ffffff",
+                        "secondary-container": "#e2dfde",
+                        "outline": "#8f7065",
+                        "surface-tint": "#FF5C00",
+                        "on-tertiary-fixed": "#001849",
+                        "inverse-primary": "#ffb59a",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#dae1ff",
+                        "primary-fixed-dim": "#ffb59a",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-surface-variant": "#5b4137",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#eeeeee",
+                        "surface-variant": "#e2e2e2",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "primary-container": "#FF5C00",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#e4beb1",
+                        "on-tertiary-fixed-variant": "#003fa4",
+                        "surface-container-high": "#e8e8e8",
+                        "on-background": "#1a1c1c",
+                        "surface-container-low": "#f3f3f3",
+                        "on-secondary-container": "#636262",
+                        "surface-bright": "#ffffff",
+                        "surface": "#ffffff",
+                        "inverse-on-surface": "#f1f1f1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "4px",
+                        "lg": "4px",
+                        "xl": "4px",
+                        "full": "4px"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface overflow-x-hidden">
+<!-- Section 0: TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl px-8 py-4 w-full mx-auto left-1/2 -translate-x-1/2">
+<div class="max-w-7xl m-auto flex items-center justify-between">
+    <div class="text-xl font-black tracking-tighter text-slate-900">VOLT MOTO</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-slate-600 hover:text-slate-900 transition-colors font-medium text-sm tracking-tight" href="#">Sản phẩm</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-medium text-sm tracking-tight" href="#">Khuyến mãi hè</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors font-medium text-sm tracking-tight" href="#">Công nghệ</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors font-medium text-sm tracking-tight" href="#">Trạm sạc</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors font-medium text-sm tracking-tight" href="#">Hỗ trợ</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded font-bold text-sm hover:opacity-90 transition-all active:scale-95 duration-200">Đặt ngay</button>
+</div>
+</nav>
+<!-- Section 1: Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Dynamic shot of a sleek electric motorbike on a sunny city street with high-contrast shadows and energetic urban youth atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsFY-htWKqVHiEyj-cc8-t8Libj7GZjY8epAZi2VemoKYxPFQpWsyICEg33IswV8aJxaXISi1D_DBwTKOvCaDjzlGPeQ3LOpfknbBAdlPkw0NtRYvblinFjoasEkqT53ys3Tn-wCnPqDtHs-G06OmvWytaRyko_LyslUIo7BtmjsP0NLUUFzDy_MjhVQiLwurfxmY9i5TaIq4o59DTDyV-PearkMt3XUoxem-rK8W08iTbN048_6Uv1x3ScJ02LdkUfHrd9DoH3JA"/>
+<div class="absolute inset-0 bg-gradient-to-r from-white via-white/40 to-transparent"></div>
+</div>
+<div class="container mx-auto px-8 relative z-10">
+<div class="max-w-2xl">
+<span class="text-primary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Back to School 2024</span>
+<h1 class="text-[3.5rem] font-black leading-[1.1] mb-6 tracking-tighter text-on-surface uppercase">Mùa Hè Rực Rỡ<br/>Vững Bước Tới Trường</h1>
+<p class="text-lg text-secondary mb-8 max-w-lg leading-relaxed">Đồng hành cùng thế hệ Gen Z chinh phục mọi nẻo đường tới trường với công nghệ điện đột phá từ VOLT MOTO.</p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded font-bold text-lg hover:opacity-90 transition-all">Khám phá ưu đãi hè</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Campaign Highlights -->
+<section class="py-24 bg-surface-container-low">
+<div class="container mx-auto px-8">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="bg-surface-container-lowest p-12 rounded border-l-8 border-primary shadow-sm">
+<h2 class="text-3xl font-black mb-6 uppercase">Ưu đãi Back to School</h2>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">redeem</span>
+<div>
+<h4 class="font-bold text-xl">Voucher 2.000.000 VNĐ</h4>
+<p class="text-secondary">Trừ trực tiếp vào giá bán cho học sinh, sinh viên toàn quốc.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">safety_check</span>
+<div>
+<h4 class="font-bold text-xl">Tặng Mũ Bảo Hiểm Cao Cấp</h4>
+<p class="text-secondary">Phiên bản giới hạn VOLT MOTO - Chống va đập tiêu chuẩn quốc tế.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="relative">
+<img class="rounded grayscale hover:grayscale-0 transition-all duration-500 shadow-2xl" data-alt="Modern high-quality motorcycle helmet placed on a minimalist industrial surface with warm orange accent lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT1kWaygbNDOQsrOzcSnpNYEjCdsw8yHA3WSCzGUp3DrKyAfwMd6XrDbQSpTmDAC-mWx9Vb0HC3ObQ0m7ueHdtzgslAYkTwTUelm4BeFqiwk4dK8t2tLHYE-HoRFgKeZAOjuMl-_cJiVaUhqca1GVq9wkz3cs7rMJv8Kj01A4WhlxT5bqMRYUTinyDc084ZPlzPbZE0cW8JG7UzSs9_67rKFYpz1fiXOXPDFr9p0smw9p1PEG_HJxicEHPCwQJ6coQcVYGd4Uw0i8"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Parent Pain Points (Bento Layout) -->
+<section class="py-24 bg-white">
+<div class="container mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black tracking-tight uppercase">Nỗi lo của Phụ huynh</h2>
+<p class="text-secondary mt-4">Thấu hiểu những băn khoăn khi con tự lập trên đường</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-high p-8 flex flex-col justify-between min-h-[300px]">
+<span class="material-symbols-outlined text-secondary text-5xl">directions_bus</span>
+<div>
+<h3 class="font-bold text-2xl mb-2">Bus đông đúc</h3>
+<p class="text-secondary">Mệt mỏi vì chờ đợi và không gian ngột ngạt giờ cao điểm.</p>
+</div>
+</div>
+<div class="bg-on-surface text-white p-8 flex flex-col justify-between min-h-[300px] md:scale-105">
+<span class="material-symbols-outlined text-primary text-5xl">local_gas_station</span>
+<div>
+<h3 class="font-bold text-2xl mb-2">Giá xăng leo thang</h3>
+<p class="opacity-70">Chi phí vận hành xe máy truyền thống ngày càng đắt đỏ.</p>
+</div>
+</div>
+<div class="bg-surface-container-high p-8 flex flex-col justify-between min-h-[300px]">
+<span class="material-symbols-outlined text-secondary text-5xl">warning</span>
+<div>
+<h3 class="font-bold text-2xl mb-2">Mất an toàn</h3>
+<p class="text-secondary">Xe máy cũ không ổn định và khó kiểm soát hành trình của con.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: VOLT MOTO Solution -->
+<section class="py-24 bg-on-surface text-white overflow-hidden">
+<div class="container mx-auto px-8 relative">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-4xl font-black mb-8 leading-tight uppercase">Giải Pháp Thông Minh<br/>An Tâm Tuyệt Đối</h2>
+<div class="space-y-8">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-primary/20 flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-primary text-3xl">savings</span>
+</div>
+<p class="text-xl font-medium">Tiết kiệm 90% chi phí vận hành so với xe xăng.</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-tertiary/20 flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-tertiary-container text-3xl">smartphone</span>
+</div>
+<p class="text-xl font-medium">Kiểm soát vận tốc và định vị qua App VOLT MOTO.</p>
+</div>
+</div>
+</div>
+<div class="relative">
+<img class="rounded border-4 border-surface-container-highest shadow-2xl scale-110" data-alt="Smartphone showing a sleek mobile app interface for tracking electric vehicle diagnostics and GPS location with industrial background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxgtKgs3S_t0h7g7MqPzKyC9XAxxk2s1YFr4R96XN35DVLHM0Qkudg25VW57imWktOzYlwwb774kV6PY1bhHcqdUiIbYq3GTOSYpyqrPLvocCMu3eu_K7rnbP0nm0zzGlblkTkfy7nh9s4A-O0Qf-Cz6eF8rFml3uVXagIX-DDrqa_PovWC-ZWZPnlc6fYn4NzR8gs-SiuBaRs82Ph0uC2cwuEAoNyLX_cCCGeGwd60V75E8NfZevZPuMsohlVBiL-7dvt_XYReRY"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Tech Specs for Gen Z -->
+<section class="py-24 bg-white">
+<div class="container mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<div class="col-span-1 md:col-span-2 bg-surface-container-low p-10 rounded">
+<h2 class="text-5xl font-black text-primary mb-4">0-50 km/h</h2>
+<p class="text-sm font-bold uppercase tracking-widest text-secondary">Gia tốc mượt mà &amp; an toàn</p>
+</div>
+<div class="bg-surface-container-low p-10 rounded">
+<h2 class="text-4xl font-black mb-2 text-on-surface">200km</h2>
+<p class="text-xs font-bold uppercase tracking-widest text-secondary">Mỗi lần sạc đầy</p>
+</div>
+<div class="bg-surface-container-low p-10 rounded">
+<h2 class="text-4xl font-black mb-2 text-on-surface">1h</h2>
+<p class="text-xs font-bold uppercase tracking-widest text-secondary">Sạc nhanh 80%</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Design & Colors -->
+<section class="py-24 bg-white">
+<div class="container mx-auto px-8 text-center">
+<h2 class="text-3xl font-black mb-16 uppercase">Phối Màu Cá Tính</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="group cursor-pointer">
+<div class="bg-surface-container p-4 rounded mb-6 overflow-hidden">
+<img class="w-full transform group-hover:scale-110 transition-transform duration-500" data-alt="Close up of an orange electric motorcycle frame showing industrial welding and premium powder coating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc_vCbuBSdGkLL3lntz-H_7xsRQhDsS9SMCA4LCtFHVGdag06Gx07d9GiSqZxUhSHDiLtwtJyc86yriPozSm0i7ogTbmtpKrQLsa4LmxEblNMh3mpTdZCed1Ua1iuMvZqoyFCqWLdq9Sl3wYgNf4F_judHZ7CSE834dhn9R5XhTI9PTWunS81nzRNOr2en9mcy1K9GbxRlDszc89QdAi-o6wfS8oM3dXaXS6WzEjg2fZDW8FuMSaaQxZl3SAFGHqVgSNb2Bp7-h1A"/>
+</div>
+<h4 class="font-bold text-xl uppercase tracking-wider">Industrial Orange</h4>
+</div>
+<div class="group cursor-pointer">
+<div class="bg-surface-container p-4 rounded mb-6 overflow-hidden">
+<img class="w-full transform group-hover:scale-110 transition-transform duration-500" data-alt="Matte black electric motorcycle details with metallic accents and sleek industrial design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1ntNfVYrK_98lNLyoyRgnskN8-hJq_UnbqZcYaWJhy3JUdZ37jpavZ6_2QrHDVDAgDIkrucOs9_YsoGD3wGipb8NUw1U9bEZVdMqvrqq8qvZjJI_BWi8b4Zz7KR7_3wO3sQRLK8JWB1twK-lZC7j643YDcQoPAfaTTEflIT2VCOGNvTVcYm0iEmWdGFqD4WFQnwFBukIchqBkQxgRJ9nwktnjZ9xz3x6iXJxKc5wgpeTcy13VrilklGhtCblhee8U8mPJTIwa8KI"/>
+</div>
+<h4 class="font-bold text-xl uppercase tracking-wider">Matte Stealth</h4>
+</div>
+<div class="group cursor-pointer">
+<div class="bg-surface-container p-4 rounded mb-6 overflow-hidden">
+<img class="w-full transform group-hover:scale-110 transition-transform duration-500" data-alt="Silver electric scooter components with clean lines and high-tech minimalist aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTRq-vB4aYJjy8BYQbMuXWO2GuG_0sBKFxww-3__z4mBgarSLJLcUMpgDPLfI-3tIpyGgI-VsaNH4pZab-s7KWUDTqKGvBPZcbbGA3Htfxj1sTLjYW3UkKVpohqcxActhcRH7-o8y8mP9xW0OAxfuK61ZrPwRHO0yyPzq4EGcB2yFO-jSuxtKuDtIKkOcNl3zl3r__36WSdt-aIbZ3qBtcyDRIEjrsKymTnuy9X7Ga7fVB0Q42bRmuOfgrjx6tcm4gjYA7U2wmBAY"/>
+</div>
+<h4 class="font-bold text-xl uppercase tracking-wider">Electric Silver</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Smart Tech Features -->
+<section class="py-24 bg-surface-container-low">
+<div class="container mx-auto px-8">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="md:w-1/2">
+<div class="inline-block bg-tertiary text-white px-4 py-1 rounded-full text-xs font-bold mb-6">INTELLIGENT SYSTEM</div>
+<h2 class="text-4xl font-black mb-6 uppercase">Kết nối không giới hạn</h2>
+<p class="text-secondary text-lg mb-8">Ứng dụng VOLT MOTO không chỉ là công cụ quản lý, đó là người bạn đồng hành thông minh cho mọi hành trình.</p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<span class="material-symbols-outlined text-tertiary mb-2">location_on</span>
+<h5 class="font-bold mb-1">Định vị GPS</h5>
+<p class="text-sm text-secondary">Theo dõi xe thời gian thực.</p>
+</div>
+<div>
+<span class="material-symbols-outlined text-tertiary mb-2">lock</span>
+<h5 class="font-bold mb-1">Khóa Smart</h5>
+<p class="text-sm text-secondary">Mở khóa không cần chìa.</p>
+</div>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="aspect-square bg-gradient-to-tr from-surface-container-highest to-surface-container-low rounded-full flex items-center justify-center relative">
+<div class="absolute inset-0 border-[20px] border-white/50 rounded-full animate-pulse"></div>
+<span class="material-symbols-outlined text-[10rem] text-tertiary/20">sensors</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 8: Battery & Safety -->
+<section class="py-24 bg-on-surface text-white">
+<div class="container mx-auto px-8">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-4xl font-black mb-8 uppercase">Pin Lithium Thế Hệ Mới</h2>
+<div class="p-8 border-2 border-outline-variant rounded inline-block mb-8">
+<span class="material-symbols-outlined text-primary text-6xl" style="font-variation-settings: 'FILL' 1;">battery_charging_full</span>
+</div>
+<p class="text-xl opacity-80 leading-relaxed mb-12">Đạt tiêu chuẩn an toàn chống cháy nổ quốc tế UN38.3. Tuổi thọ lên đến 15 năm, đảm bảo đồng hành suốt quãng đời học sinh, sinh viên cùng VOLT MOTO.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white/10 p-6 rounded">
+<h4 class="font-bold text-lg mb-2">Chống Nước IP67</h4>
+<p class="text-sm opacity-60">Thách thức mọi cơn mưa rào mùa hè.</p>
+</div>
+<div class="bg-white/10 p-6 rounded">
+<h4 class="font-bold text-lg mb-2">Tự Ngắt Sạc</h4>
+<p class="text-sm opacity-60">An toàn tuyệt đối khi sạc qua đêm.</p>
+</div>
+<div class="bg-white/10 p-6 rounded">
+<h4 class="font-bold text-lg mb-2">Bảo Hành 10 Năm</h4>
+<p class="text-sm opacity-60">Cam kết chất lượng từ VOLT MOTO.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 9: Portfolio / Lifestyle -->
+<section class="py-24 bg-white">
+<div class="container mx-auto px-8">
+<h2 class="text-3xl font-black mb-12 uppercase tracking-tighter">Khoảnh Khắc Cùng VOLT MOTO</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<img class="w-full h-80 object-cover rounded shadow-md" data-alt="Student with backpack standing next to a modern electric bike in a bright university courtyard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw6sgCblp1NPBiFzncXnQfA0_gVD6ysANCGCnjwCzWvRsUD8mKYPDTPJxsYzYAE2-2OvrAwDyiBBftVcEwXc3szRN2Lf_DI6oFTJW8hG4MiCCBeliUy2JY6EJQ6zoJofwTnjWO40gYQi9djvrkLFv2PI1Lg-USNP4pUSTkEo00CPnlk6-e5Wfp-bqSQtLfTnj4Q4-xbz6sKnBtRPRsFbLYFT8g8pMORMoiUc3hFcSQ33S5GT-bm2wcT1Jkll1H1eoW9O2T87RL5Fs"/>
+<img class="w-full h-80 object-cover rounded shadow-md" data-alt="Two young friends laughing and talking next to parked electric motorcycles at a modern urban park" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD30J9j6LBPjfj7nVwOtvtF0MwwZowk3BZmovkWtWDvviBUCKcMFRF39XmoElMjAg_LbBoD7d4Xvy3vAAZyuxh64E6QnlICYjbFtlLz2WMg4txjrfib2zS4QNJMZ4Hv8ae7EXCRkTAux4LkAGC2nGX6QLHVIfxLuDbQ4KAePPYDwVpKZ83SZPVDMecLYXLeeUoug_NYAxRn0ePvysMZg345Mx-8ECo6pLPd84ifDh-MRW_VCHxBLn9HYNBA9-PAzaVo3aLFtyNdegc"/>
+<img class="w-full h-80 object-cover rounded shadow-md" data-alt="Electric motorcycle parked in front of a minimalist coffee shop with architectural lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvn9tj5VhnuCPSU2eAOpZcNuGz_1R7GONQ5dTU71Ta6h2WmsKa138ymeu2Zd9hOA7XVWvWQxlAI8o87zU2d7Rliu9OhL8FsvWewwb9vz8UyUabZKegnpEqqI-y5Hh-BuuyefKGrfw9UZVL0kfl4doigTq1O654d-MxDDdwUTuoMoi9pwltlYj2PleaaaJeygVbQRwuH_hTsbZ00WcxVmyFz20wOdAKrwMlmFf2vXo7b8RrdPynjMFX4qG5DYD_hA-PWtKXkcVYLio"/>
+<img class="w-full h-80 object-cover rounded shadow-md" data-alt="Student studying on a laptop in a cafe with their electric bike visible through the window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDljLKv_jCvnjrQ9uT1Q992E2sXb3ss2pce50ilOCvX17s1O7-pjZnZkuUOhgmVl9tyW1JNV-t63Gg0Ly0qK2T_6CLcG-Qm4ol3nzD3dOAlkOZe-_7ftVEjYTAphk415rDSWLYpqN4NNQEGlLxxH5aRYi2up6y2m-9jUU1KpMHovvc4EyYErk8Hz9gb2SGvPSd-zVDI4c4ACkWV_2FW_-qSB-EA8coaBzNxEZ4EnHUpz9CUO7ZZXs74J0IDZtDQ8fnUDDujMvBr3Xs"/>
+<img class="w-full h-80 object-cover rounded shadow-md" data-alt="Close up of handle bar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1ntNfVYrK_98lNLyoyRgnskN8-hJq_UnbqZcYaWJhy3JUdZ37jpavZ6_2QrHDVDAgDIkrucOs9_YsoGD3wGipb8NUw1U9bEZVdMqvrqq8qvZjJI_BWi8b4Zz7KR7_3wO3sQRLK8JWB1twK-lZC7j643YDcQoPAfaTTEflIT2VCOGNvTVcYm0iEmWdGFqD4WFQnwFBukIchqBkQxgRJ9nwktnjZ9xz3x6iXJxKc5wgpeTcy13VrilklGhtCblhee8U8mPJTIwa8KI"/>
+<img class="w-full h-80 object-cover rounded shadow-md" data-alt="Lifestyle shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT1kWaygbNDOQsrOzcSnpNYEjCdsw8yHA3WSCzGUp3DrKyAfwMd6XrDbQSpTmDAC-mWx9Vb0HC3ObQ0m7ueHdtzgslAYkTwTUelm4BeFqiwk4dK8t2tLHYE-HoRFgKeZAOjuMl-_cJiVaUhqca1GVq9wkz3cs7rMJv8Kj01A4WhlxT5bqMRYUTinyDc084ZPlzPbZE0cW8JG7UzSs9_67rKFYpz1fiXOXPDFr9p0smw9p1PEG_HJxicEHPCwQJ6coQcVYGd4Uw0i8"/>
+<img class="w-full h-80 object-cover rounded shadow-md" data-alt="Bike on street" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc_vCbuBSdGkLL3lntz-H_7xsRQhDsS9SMCA4LCtFHVGdag06Gx07d9GiSqZxUhSHDiLtwtJyc86yriPozSm0i7ogTbmtpKrQLsa4LmxEblNMh3mpTdZCed1Ua1iuMvZqoyFCqWLdq9Sl3wYgNf4F_judHZ7CSE834dhn9R5XhTI9PTWunS81nzRNOr2en9mcy1K9GbxRlDszc89QdAi-o6wfS8oM3dXaXS6WzEjg2fZDW8FuMSaaQxZl3SAFGHqVgSNb2Bp7-h1A"/>
+<img class="w-full h-80 object-cover rounded shadow-md" data-alt="Student life" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT1kWaygbNDOQsrOzcSnpNYEjCdsw8yHA3WSCzGUp3DrKyAfwMd6XrDbQSpTmDAC-mWx9Vb0HC3ObQ0m7ueHdtzgslAYkTwTUelm4BeFqiwk4dK8t2tLHYE-HoRFgKeZAOjuMl-_cJiVaUhqca1GVq9wkz3cs7rMJv8Kj01A4WhlxT5bqMRYUTinyDc084ZPlzPbZE0cW8JG7UzSs9_67rKFYpz1fiXOXPDFr9p0smw9p1PEG_HJxicEHPCwQJ6coQcVYGd4Uw0i8"/>
+<img class="w-full h-80 object-cover rounded shadow-md" data-alt="Urban mobility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTRq-vB4aYJjy8BYQbMuXWO2GuG_0sBKFxww-3__z4mBgarSLJLcUMpgDPLfI-3tIpyGgI-VsaNH4pZab-s7KWUDTqKGvBPZcbbGA3Htfxj1sTLjYW3UkKVpohqcxActhcRH7-o8y8mP9xW0OAxfuK61ZrPwRHO0yyPzq4EGcB2yFO-jSuxtKuDtIKkOcNl3zl3r__36WSdt-aIbZ3qBtcyDRIEjrsKymTnuy9X7Ga7fVB0Q42bRmuOfgrjx6tcm4gjYA7U2wmBAY"/>
+</div>
+</div>
+</section>
+<!-- Section 10: Reviews -->
+<section class="py-24 bg-surface-container-low">
+<div class="container mx-auto px-8">
+<h2 class="text-3xl font-black mb-16 text-center uppercase">Phụ huynh nói gì?</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white p-10 rounded relative border border-surface-variant">
+<span class="material-symbols-outlined absolute top-8 right-8 text-primary/20 text-6xl">format_quote</span>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-14 h-14 bg-surface-container-highest rounded"></div>
+<div>
+<h5 class="font-bold">Chị Minh Anh</h5>
+<p class="text-xs text-secondary">Phụ huynh tại Hà Nội</p>
+</div>
+</div>
+<p class="text-lg italic leading-relaxed">"Từ ngày mua VOLT MOTO cho con, tôi không còn lo lắng chuyện con đi học bằng bus quá tải. Xe an toàn, tôi có thể kiểm tra vị trí của con bất cứ lúc nào qua điện thoại."</p>
+</div>
+<div class="bg-white p-10 rounded relative border border-surface-variant">
+<span class="material-symbols-outlined absolute top-8 right-8 text-primary/20 text-6xl">format_quote</span>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-14 h-14 bg-surface-container-highest rounded"></div>
+<div>
+<h5 class="font-bold">Anh Quốc Trung</h5>
+<p class="text-xs text-secondary">Phụ huynh tại TP. HCM</p>
+</div>
+</div>
+<p class="text-lg italic leading-relaxed">"Tiền xăng tiết kiệm được mỗi tháng đủ để đóng tiền học thêm cho con. Xe chạy êm, thiết kế con rất thích, đi đâu cũng thấy tự tin với VOLT MOTO."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 11: Our Products -->
+<section class="py-24 bg-white" id="products">
+<div class="container mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black tracking-tight uppercase">Sản phẩm</h2>
+<p class="text-secondary mt-4">Những dòng xe điện hàng đầu dành cho thế hệ mới</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Product 1 -->
+<div class="bg-surface-container-low p-6 rounded flex flex-col">
+<div class="aspect-[4/3] bg-white rounded overflow-hidden mb-6">
+<img alt="Volt Alpha" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc_vCbuBSdGkLL3lntz-H_7xsRQhDsS9SMCA4LCtFHVGdag06Gx07d9GiSqZxUhSHDiLtwtJyc86yriPozSm0i7ogTbmtpKrQLsa4LmxEblNMh3mpTdZCed1Ua1iuMvZqoyFCqWLdq9Sl3wYgNf4F_judHZ7CSE834dhn9R5XhTI9PTWunS81nzRNOr2en9mcy1K9GbxRlDszc89QdAi-o6wfS8oM3dXaXS6WzEjg2fZDW8FuMSaaQxZl3SAFGHqVgSNb2Bp7-h1A"/>
+</div>
+<h3 class="font-bold text-2xl mb-2">VOLT Alpha</h3>
+<p class="text-secondary text-sm mb-4 flex-grow">Mẫu xe tối giản, trọng lượng nhẹ, hoàn hảo cho việc di chuyển trong phố hàng ngày.</p>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-surface-variant">
+<span class="text-xl font-black text-primary">39.000.000đ</span>
+<button class="bg-on-surface text-white px-4 py-2 rounded text-sm font-bold uppercase tracking-wider hover:bg-primary transition-colors">Xem chi tiết</button>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-surface-container-low p-6 rounded flex flex-col">
+<div class="aspect-[4/3] bg-white rounded overflow-hidden mb-6">
+<img alt="Volt Sigma" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1ntNfVYrK_98lNLyoyRgnskN8-hJq_UnbqZcYaWJhy3JUdZ37jpavZ6_2QrHDVDAgDIkrucOs9_YsoGD3wGipb8NUw1U9bEZVdMqvrqq8qvZjJI_BWi8b4Zz7KR7_3wO3sQRLK8JWB1twK-lZC7j643YDcQoPAfaTTEflIT2VCOGNvTVcYm0iEmWdGFqD4WFQnwFBukIchqBkQxgRJ9nwktnjZ9xz3x6iXJxKc5wgpeTcy13VrilklGhtCblhee8U8mPJTIwa8KI"/>
+</div>
+<h3 class="font-bold text-2xl mb-2">VOLT Sigma</h3>
+<p class="text-secondary text-sm mb-4 flex-grow">Sức mạnh vượt trội và quãng đường di chuyển lên đến 200km cho một lần sạc.</p>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-surface-variant">
+<span class="text-xl font-black text-primary">59.000.000đ</span>
+<button class="bg-on-surface text-white px-4 py-2 rounded text-sm font-bold uppercase tracking-wider hover:bg-primary transition-colors">Xem chi tiết</button>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-surface-container-low p-6 rounded flex flex-col">
+<div class="aspect-[4/3] bg-white rounded overflow-hidden mb-6">
+<img alt="Volt Delta" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTRq-vB4aYJjy8BYQbMuXWO2GuG_0sBKFxww-3__z4mBgarSLJLcUMpgDPLfI-3tIpyGgI-VsaNH4pZab-s7KWUDTqKGvBPZcbbGA3Htfxj1sTLjYW3UkKVpohqcxActhcRH7-o8y8mP9xW0OAxfuK61ZrPwRHO0yyPzq4EGcB2yFO-jSuxtKuDtIKkOcNl3zl3r__36WSdt-aIbZ3qBtcyDRIEjrsKymTnuy9X7Ga7fVB0Q42bRmuOfgrjx6tcm4gjYA7U2wmBAY"/>
+</div>
+<h3 class="font-bold text-2xl mb-2">VOLT Delta</h3>
+<p class="text-secondary text-sm mb-4 flex-grow">Thiết kế tương lai với các tính năng thông minh thế hệ mới nhất của VOLT MOTO.</p>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-surface-variant">
+<span class="text-xl font-black text-primary">65.000.000đ</span>
+<button class="bg-on-surface text-white px-4 py-2 rounded text-sm font-bold uppercase tracking-wider hover:bg-primary transition-colors">Xem chi tiết</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 12: FAQ -->
+<section class="py-24 bg-white">
+<div class="container mx-auto px-8 max-w-3xl">
+<h2 class="text-3xl font-black mb-12 uppercase">Thắc mắc thường gặp</h2>
+<div class="space-y-6">
+<details class="group border-b border-surface-container pb-6 cursor-pointer">
+<summary class="flex justify-between items-center font-bold text-xl list-none">
+                    Học sinh bao nhiêu tuổi được lái xe VOLT MOTO?
+                    <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="mt-4 text-secondary leading-relaxed">Theo luật, học sinh từ 16 tuổi trở lên có thể điều khiển xe máy điện có công suất phù hợp. VOLT MOTO cung cấp các dòng xe tối ưu cho độ tuổi này với chế độ giới hạn tốc độ an toàn.</p>
+</details>
+<details class="group border-b border-surface-container pb-6 cursor-pointer">
+<summary class="flex justify-between items-center font-bold text-xl list-none">
+                    Có cần bằng lái xe không?
+                    <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="mt-4 text-secondary leading-relaxed">Với dòng xe máy điện có tốc độ thiết kế không quá 50km/h, học sinh không cần bằng lái nhưng phải đảm bảo đủ tuổi và tuân thủ luật giao thông.</p>
+</details>
+<details class="group border-b border-surface-container pb-6 cursor-pointer">
+<summary class="flex justify-between items-center font-bold text-xl list-none">
+                    Chế độ bảo hành như thế nào?
+                    <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<p class="mt-4 text-secondary leading-relaxed">VOLT MOTO áp dụng chế độ bảo hành 10 năm cho pin và 3 năm cho toàn bộ xe. Chúng tôi có đội ngũ cứu hộ tận nơi 24/7.</p>
+</details>
+</div>
+</div>
+</section>
+<!-- Section 13: Footer & Registration Form -->
+<section class="py-24 bg-surface-container-high">
+<div class="container mx-auto px-8">
+<div class="grid md:grid-cols-2 gap-16">
+<div>
+<h2 class="text-4xl font-black mb-6 uppercase">Đăng Ký Lái Thử</h2>
+<p class="text-lg text-secondary mb-8">Trải nghiệm cảm giác lái khác biệt cùng VOLT MOTO và nhận ngay bộ quà tặng "Summer Vibe" giới hạn.</p>
+<form class="space-y-4">
+<input class="w-full p-4 border-none bg-white rounded focus:ring-2 focus:ring-primary" placeholder="Họ và tên" type="text"/>
+<input class="w-full p-4 border-none bg-white rounded focus:ring-2 focus:ring-primary" placeholder="Số điện thoại" type="tel"/>
+<select class="w-full p-4 border-none bg-white rounded focus:ring-2 focus:ring-primary">
+<option>Chọn khu vực gần bạn</option>
+<option>Hà Nội</option>
+<option>Đà Nẵng</option>
+<option>TP. Hồ Chí Minh</option>
+</select>
+<button class="w-full bg-primary text-on-primary font-bold py-4 rounded uppercase tracking-widest hover:opacity-90 transition-all">Gửi thông tin</button>
+</form>
+</div>
+<div class="flex flex-col justify-center border-l-0 md:border-l-2 border-outline-variant md:pl-16">
+<div class="mb-8">
+<h4 class="font-black text-xl mb-4 uppercase">Kết nối với VOLT MOTO</h4>
+<div class="flex gap-4">
+<a class="w-12 h-12 bg-white flex items-center justify-center rounded-full hover:bg-primary hover:text-white transition-all shadow-sm" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="w-12 h-12 bg-white flex items-center justify-center rounded-full hover:bg-primary hover:text-white transition-all shadow-sm" href="#"><span class="material-symbols-outlined">play_circle</span></a>
+<a class="w-12 h-12 bg-white flex items-center justify-center rounded-full hover:bg-primary hover:text-white transition-all shadow-sm" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-black text-xl mb-4 uppercase">Hotline hỗ trợ 24/7</h4>
+<p class="text-3xl font-black text-primary">1900 633 045</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-neutral-50 dark:bg-neutral-950 w-full py-16 tonal-shift bg-neutral-50">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto items-start">
+<div class="space-y-6">
+<div class="text-xl font-black text-neutral-900 dark:text-white uppercase">VOLT MOTO</div>
+<p class="font-be-vietnam text-[0.7rem] font-medium tracking-wide text-neutral-500 uppercase">SẢN XUẤT TẠI VIỆT NAM. DẪN ĐẦU CÔNG NGHỆ XE ĐIỆN.</p>
+</div>
+<div>
+<h4 class="font-bold text-xs uppercase mb-6 text-neutral-900 dark:text-white">SẢN PHẨM</h4>
+<ul class="space-y-4 font-be-vietnam text-[0.7rem] font-medium tracking-wide text-neutral-500 uppercase">
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">WEAVER++</a></li>
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">WEAVER 200</a></li>
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">PHỤ KIỆN</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-xs uppercase mb-6 text-neutral-900 dark:text-white">CÔNG TY</h4>
+<ul class="space-y-4 font-be-vietnam text-[0.7rem] font-medium tracking-wide text-neutral-500 uppercase">
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">VỀ CHÚNG TÔI</a></li>
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">CHÍNH SÁCH BẢO HÀNH</a></li>
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">HỆ THỐNG CỬA HÀNG</a></li>
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">LIÊN HỆ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-xs uppercase mb-6 text-neutral-900 dark:text-white">NEWSLETTER</h4>
+<div class="flex gap-2">
+<input class="bg-surface-container-high border-none rounded p-3 text-xs flex-grow focus:ring-1 focus:ring-[#ff5c00]" placeholder="Email của bạn" type="email"/>
+<button class="bg-neutral-900 text-white px-4 rounded hover:bg-primary-container transition-all"><span class="material-symbols-outlined text-sm">send</span></button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/10">
+<p class="font-be-vietnam text-[0.7rem] font-medium tracking-wide text-neutral-500 uppercase">© 2024 DAT BIKE VIETNAM. SẢN XUẤT TẠI VIỆT NAM.</p>
+</div>
+</footer>
+</body></html>

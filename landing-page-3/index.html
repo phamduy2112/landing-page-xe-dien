@@ -1,0 +1,621 @@
+<html lang="vi"><head></head><body class="text-on-surface selection:bg-primary selection:text-white">
+
+
+
+    <meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ZENITH | Tốc Độ Xanh - Làm Chủ Cuộc Chơi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#a73a00",
+                        "primary-fixed-dim": "#ffb59a",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f9f9f9",
+                        "surface-variant": "#e2e2e2",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#636262",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-tertiary-container": "#00266a",
+                        "on-surface-variant": "#5b4137",
+                        "on-primary-fixed": "#370e00",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "secondary-container": "#e2dfde",
+                        "outline-variant": "#e4beb1",
+                        "primary-container": "#ff5c00",
+                        "on-tertiary-fixed-variant": "#003fa4",
+                        "surface-container": "#eeeeee",
+                        "surface": "#f9f9f9",
+                        "inverse-surface": "#2f3131",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dadada",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "secondary": "#5f5e5e",
+                        "on-secondary-fixed-variant": "#474746",
+                        "primary-fixed": "#ffdbce",
+                        "on-primary-fixed-variant": "#802a00",
+                        "surface-container-highest": "#e2e2e2",
+                        "background": "#f9f9f9",
+                        "on-tertiary-fixed": "#001849",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-fixed-dim": "#b3c5ff",
+                        "surface-tint": "#a73a00",
+                        "outline": "#8f7065",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#dae1ff",
+                        "tertiary": "#0054d6",
+                        "on-background": "#1a1c1c",
+                        "inverse-primary": "#ffb59a",
+                        "surface-container-low": "#f3f3f3",
+                        "on-primary-container": "#521800",
+                        "inverse-on-surface": "#f1f1f1",
+                        "tertiary-container": "#618dff",
+                        "surface-container-high": "#e8e8e8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Be Vietnam Pro"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Be Vietnam Pro', sans-serif; background-color: #f9f9f9; }
+        .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+<!-- 1. TopNavBar -->
+<nav class="sticky top-0 z-50 flex justify-between items-center px-6 md:px-12 py-6 w-full max-w-screen-2xl mx-auto bg-white/70 backdrop-blur-xl transition-all duration-300">
+<div class="text-2xl font-black tracking-tighter text-orange-700 uppercase">ZENITH</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-orange-600 font-bold border-b-2 border-orange-600 transition-all duration-300" href="#">Sản phẩm</a>
+<a class="text-zinc-600 font-medium hover:text-orange-500 transition-all duration-300" href="#">Công nghệ</a>
+<a class="text-zinc-600 font-medium hover:text-orange-500 transition-all duration-300" href="#">Đặt hàng</a>
+<a class="text-zinc-600 font-medium hover:text-orange-500 transition-all duration-300" href="#">Showroom</a>
+<a class="text-zinc-600 font-medium hover:text-orange-500 transition-all duration-300" href="#">Cộng đồng</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-white px-6 py-2 text-sm font-bold tracking-tight rounded-lg transition-transform active:scale-90 hover:opacity-90">ĐẶT CỌC NGAY</button>
+<span class="material-symbols-outlined md:hidden cursor-pointer" data-icon="menu">menu</span>
+</div>
+</nav>
+<!-- 2. Hero Section -->
+<header class="relative min-h-[921px] flex items-center justify-center overflow-hidden bg-surface px-6 md:px-12">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-90" data-alt="dramatic wide shot of a high-tech electric motorcycle speeding through a futuristic urban neon landscape at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSazTqOM9Doj7EuwLqU_01HlHdToqEBzlA6Y2rEnhXkvsCXiXUSkBye9KRcTdDL9XKc0_pIQyCKce6dLgvupyYO8Jk8XgGxj0xM7Wy8UR-TJimaDVOPXE-SUJ_TjSu5JYCXQlT3Ia7KSVF5n1KEXJMQRMKDxFCCinlvXJrGH54Hb3QpRPGUMehxUBe72PtnU29kl4cGhnfQFt9lUEbZcxNNv2BcofqHF6pz_OxRuZbj9GfKWJoeiTiGdfpm4XTl1dOHwQnJWgb-h4"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-7xl">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1 bg-primary text-white text-[10px] font-black tracking-[0.2em] mb-6 rounded-full">CAMPAIGN 2024</span>
+<h1 class="text-5xl md:text-8xl font-black text-on-surface tracking-tighter leading-none mb-8">
+                TỐC ĐỘ XANH<br/>LÀM CHỦ<br/><span class="text-primary">CUỘC CHƠI</span>
+</h1>
+<p class="text-lg md:text-xl text-secondary mb-10 max-w-lg leading-relaxed">
+                Trải nghiệm sự bứt phá từ động cơ điện thế hệ mới. Hiệu năng vượt trội, công nghệ thông minh, định hình tương lai di chuyển.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-md font-bold text-sm tracking-widest hover:bg-primary-container transition-colors shadow-xl shadow-primary/20">
+                    ĐĂNG KÝ LÁI THỬ
+                </button>
+<button class="bg-surface-container-low text-on-surface px-10 py-5 rounded-md font-bold text-sm tracking-widest hover:bg-surface-container-high transition-colors">
+                    TÌM HIỂU THÊM
+                </button>
+</div>
+</div>
+</div>
+</header>
+<!-- 3. Introduction -->
+<section class="py-24 px-6 md:px-12 bg-surface-container-lowest">
+<div class="max-w-screen-xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2">
+<h2 class="text-3xl md:text-5xl font-extrabold tracking-tighter mb-8 leading-tight">
+                Tái định nghĩa<br/>Sức mạnh bền vững.
+            </h2>
+<div class="space-y-6 text-secondary text-lg leading-relaxed">
+<p>ZENITH không chỉ tạo ra phương tiện, chúng tôi kiến tạo một trải nghiệm lái hoàn toàn mới. Nơi tốc độ không còn là gánh nặng cho môi trường.</p>
+<p>Mỗi chiếc xe là một kiệt tác kỹ thuật, kết hợp giữa khung sườn nhôm nguyên khối và khối pin LFP tiên tiến nhất, mang lại sự cân bằng hoàn hảo giữa sức mạnh và sự thanh thoát.</p>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative">
+<div class="aspect-square bg-surface-container rounded-3xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close-up of industrial electric motorcycle motor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7rHaxJV4-rOQOfs0S9Cg7mKSNkJ4PKKPOdB91Etx4MeDXpdzZAXeOFTxWsTPVNThL5TtzQ_18uwaR4ppmt2FDlVmw-_ViSunHxeLQuO6F1bchEx_HUlN3zygYaxUjjUvOfKoC02YtQR04C0FZrPvDgdObKB14mF035XLvbil3LM5AbwOkZhZMSuzlkk3DTGvHXRF3hvmu1MYiRalXgcT4-Se3BwultHm3wdKX7oXVK6_zmv9Q-l9Pgm1dHX6DEaUQHerGdvz7aKs"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white p-8 rounded-2xl shadow-2xl max-w-xs">
+<p class="text-primary font-black text-4xl mb-1">0%</p>
+<p class="text-xs font-bold text-secondary uppercase tracking-widest">Phát thải Carbon</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Specs Grid -->
+<section class="py-24 px-6 md:px-12 bg-surface">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-px bg-outline-variant/20 rounded-3xl overflow-hidden border border-outline-variant/10">
+<div class="bg-surface-container-lowest p-12 flex flex-col justify-between group hover:bg-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-white transition-colors" data-icon="speed">speed</span>
+<div class="mt-20">
+<h3 class="text-7xl font-black group-hover:text-white transition-colors mb-2">110<span class="text-2xl ml-1">km/h</span></h3>
+<p class="text-sm font-bold uppercase tracking-widest text-secondary group-hover:text-on-primary/80">Tốc độ tối đa</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-12 flex flex-col justify-between group hover:bg-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-white transition-colors" data-icon="route">route</span>
+<div class="mt-20">
+<h3 class="text-7xl font-black group-hover:text-white transition-colors mb-2">200<span class="text-2xl ml-1">km</span></h3>
+<p class="text-sm font-bold uppercase tracking-widest text-secondary group-hover:text-on-primary/80">Quãng đường / lần sạc</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-12 flex flex-col justify-between group hover:bg-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-white transition-colors" data-icon="bolt">bolt</span>
+<div class="mt-20">
+<h3 class="text-7xl font-black group-hover:text-white transition-colors mb-2">01<span class="text-2xl ml-1">giờ</span></h3>
+<p class="text-sm font-bold uppercase tracking-widest text-secondary group-hover:text-on-primary/80">Sạc nhanh 0-80%</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Design -->
+<section class="py-24 px-6 md:px-12 bg-white overflow-hidden">
+<div class="max-w-screen-2xl mx-auto flex flex-col lg:flex-row items-center">
+<div class="lg:w-1/3 z-10">
+<h2 class="text-sm font-black text-primary tracking-[0.4em] uppercase mb-6">Thẩm mỹ Cơ khí</h2>
+<h3 class="text-5xl font-black tracking-tighter mb-8">Thiết kế tối giản, công năng tối đa.</h3>
+<p class="text-secondary leading-relaxed mb-8">Lấy cảm hứng từ phong cách Industrial Minimalism, mọi chi tiết trên ZENITH đều có mục đích riêng, loại bỏ hoàn toàn các thành phần rườm rà.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 text-sm font-bold tracking-tight">
+<span class="w-2 h-2 bg-primary rounded-full"></span> Khung nhôm hàng không siêu nhẹ
+                </li>
+<li class="flex items-center gap-4 text-sm font-bold tracking-tight">
+<span class="w-2 h-2 bg-primary rounded-full"></span> Hệ thống đèn LED Matrix đặc trưng
+                </li>
+<li class="flex items-center gap-4 text-sm font-bold tracking-tight">
+<span class="w-2 h-2 bg-primary rounded-full"></span> Yên xe công thái học bọc da cao cấp
+                </li>
+</ul>
+</div>
+<div class="lg:w-2/3 mt-16 lg:mt-0 lg:-mr-48">
+<img class="w-full h-auto object-contain transform scale-110" data-alt="minimalist electric bike frame" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCST1OLRIzUSnAsml6tP5gzAJTzXMm9__OvzbIkCEqPAbl0g4YsySg9AUd9q3yRC-j_ol56ZXzZgQX1QoDKHoJgcu6eyBD9QHcwE5NcgKY7ZbtUZSRRKwkE53UG2rTxMPC3OBJKuk26WNgEIRSBewLa8ohxTiM7nA33Z8jDgNgmLSRnqf8A-MruP5h23VyxCa7togReovyutkvlKqoc2klJg0QkLaX-Zgw_cF67Bj5w6KZWjmfmptVB5SwD9QieirqM-f7ri3SJ80U"/>
+</div>
+</div>
+</section>
+<!-- 6. Tech -->
+<section class="py-24 px-6 md:px-12 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-16">
+<h2 class="text-4xl font-black tracking-tighter">Công nghệ Smart Connect</h2>
+<p class="text-secondary mt-4">Làm chủ chiếc xe ngay trên điện thoại của bạn.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white p-8 rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-tertiary mb-6" data-icon="phone_iphone">phone_iphone</span>
+<h4 class="font-bold mb-2">Mở khóa từ xa</h4>
+<p class="text-sm text-secondary">Tự động nhận diện chủ xe và kích hoạt qua Bluetooth.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-tertiary mb-6" data-icon="location_on">location_on</span>
+<h4 class="font-bold mb-2">GPS Chống trộm</h4>
+<p class="text-sm text-secondary">Theo dõi vị trí xe thời gian thực 24/7 qua ứng dụng VoltApp.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-tertiary mb-6" data-icon="update">update</span>
+<h4 class="font-bold mb-2">Cập nhật OTA</h4>
+<p class="text-sm text-secondary">Nâng cấp tính năng mới và tối ưu hiệu suất qua internet.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-tertiary mb-6" data-icon="analytics">analytics</span>
+<h4 class="font-bold mb-2">Chẩn đoán lỗi</h4>
+<p class="text-sm text-secondary">Tự động kiểm tra hệ thống và thông báo bảo trì định kỳ.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Battery Section -->
+<section class="py-24 px-6 md:px-12 bg-on-surface text-white overflow-hidden relative">
+<div class="absolute right-0 top-0 w-1/3 h-full bg-primary opacity-10 blur-[120px]"></div>
+<div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center gap-16 relative z-10">
+<div class="w-full md:w-1/2">
+<img class="rounded-3xl shadow-2xl border border-white/10" data-alt="lithium battery cell" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwHlUc4f7g52TLLUOBMEjjQOCFhr1essgQMJ2n8GhiiHlnT25eEvqxO9u8rXC_vWycOUBzreLTsqlitI85inSVeLsnPhnpQwTvJkzjKf2oK78rv6HXR7ApVD0b8JRcMvO1NZauRvMaGiva9Nfnllf8yxDoXcppfTYXzI16I2DyVrxgeixkSi-_awrAN6eH_ac0YDZt4EKujLE09ZjGnyS6ek99t1z0rTBW9YVnafiB3hmLx0Y3Kh5eJ753mhTnwkomnhU06Ybv-uw"/>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="text-sm font-black text-primary tracking-[0.4em] uppercase mb-6">Năng lượng Bền bỉ</h2>
+<h3 class="text-5xl font-black tracking-tighter mb-8 leading-tight">Pin LFP thế hệ mới.<br/>Tuổi thọ 10 năm.</h3>
+<p class="text-secondary-fixed-dim text-lg leading-relaxed mb-10">Sử dụng công nghệ Lithium Iron Phosphate (LFP) cao cấp nhất, pin của ZENITH không chỉ an toàn hơn mà còn duy trì hiệu suất sau hơn 2000 chu kỳ sạc.</p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<p class="text-3xl font-bold text-white mb-1">2000+</p>
+<p class="text-xs uppercase tracking-widest text-zinc-500 font-bold">Chu kỳ sạc</p>
+</div>
+<div>
+<p class="text-3xl font-bold text-white mb-1">IP67</p>
+<p class="text-xs uppercase tracking-widest text-zinc-500 font-bold">Kháng nước &amp; bụi</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Safety -->
+<section class="py-24 px-6 md:px-12 bg-surface">
+<div class="max-w-screen-2xl mx-auto text-center mb-16">
+<h2 class="text-4xl font-black tracking-tighter">An toàn tuyệt đối trên mọi cung đường</h2>
+</div>
+<div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="order-2 md:order-1 space-y-8">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="safety_check">safety_check</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-2">Phanh ABS đôi</h4>
+<p class="text-secondary">Kiểm soát lực phanh tối ưu, ngăn chặn bó cứng bánh xe ngay cả trong điều kiện đường trơn trượt.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="settings_input_component">settings_input_component</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-2">Phuộc Showa cao cấp</h4>
+<p class="text-secondary">Hệ thống giảm xóc hành trình ngược phía trước và monoshock phía sau cho sự êm ái vượt trội.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="light_mode">light_mode</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-2">Cảm biến ánh sáng</h4>
+<p class="text-secondary">Tự động điều chỉnh cường độ đèn pha dựa trên điều kiện môi trường xung quanh.</p>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<img class="rounded-3xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="motorcycle disc brake" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuh5GS0_7XiireVGjm7ayIaYyufETFSn-abPpiDxM91_KIh0jIFEgKLrB680DDN7eo9qBy0E1Lpi0Urmtm29oe0g2xuUzA9-YpeMOMT304Uyjm79WKw9ZiABrnaoBh0vTpq6MUxbPBmyUdPBHV0_CKgizNZ8br1II6lRzvKtoRUk1zCh4OlABKpmnWffniC0mItz7_p1XGSngheHwWGOwVPYb1N4YtvpztnCUC7FqQxVC79AtZVFGPBIEgHRnK1pT28zA9tBqg-KQ"/>
+</div>
+</div>
+</section>
+<!-- 9. Lifestyle Grid (Moments) -->
+<section class="py-24 px-6 md:px-12 bg-surface-container-lowest">
+<div class="max-w-screen-2xl mx-auto mb-16 flex justify-between items-end">
+<div>
+<h2 class="text-sm font-black text-primary tracking-[0.4em] uppercase mb-4">Khoảnh khắc Volt</h2>
+<h3 class="text-4xl font-black tracking-tighter">Đồng hành cùng bạn mọi lúc, mọi nơi.</h3>
+</div>
+<a class="hidden md:block text-sm font-bold border-b border-on-surface pb-1" href="#">FOLLOW @VOLTMOTO</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[250px]">
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="rider in city" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSkI9jYJP8Yv2DfhjpdWiolXm2mRcJsfrIPY1QsQWUWlxmWy180dU66Cn8i7wc2cVC7CIbuJOu0qKKHgHfEkHqKOl3iSTXAXVTxzNxMhWSAnkQYr95QX8MKWV3ovAc8zgIY0eYZKODsIteCYusJmZgUcD1cPS67rKrtfrbqtN-fDi68kzsytOqYR0QCgZTQmSpoV0Q0Vm9a7rGG25mQImkMF1F2rIFvXdR7I1q-t8g1VwUWi3WrXnt0AjIbqwq8NRyZwpw5z6vHXQ"/>
+</div>
+<div class="rounded-2xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="parked bike" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFelb_hF4Z1_Ea82R5gzUFI2EZTFkdMsz9t8ChSOcDJWUHtCvyUtzXtrhiLySV7F6fJ-y3EMJ94nKRpBRXASFT9JW3RIr17KYXEJB6VfJ8l3i3IRaFY6cAJ58n86UKfEglGf0JzX7rRtws0ZZCR-z3pCfDZyx-dAk9tbQNY7MihR81_CPd0hk_CHye5DMwE6vE6Zk57AcqXlUjN-dy8tevoJxdZNf2ES0suSYqbC3dy4bPnKmGea8xXayAi7u4oF7LjkuKJlQGwXY"/>
+</div>
+<div class="rounded-2xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="rider hands" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA8sDOvM5cWw2Ad-1UIvFLR0FXJdSUXyk0Kd_kdLeOhpjftIr18gRAguMscf1GBV5jCAeXiFqDgY5alUto6_ZWdDtfFrPyLS5kywZqNNtzbtA9HEgWCruXggO0WmQZoWUrJE_Op3evtF8nKFZShWBvDGu3kj_OzKP-1jIkthp_yZ4SCU9EOSslGSqyg7rjVpo3o-5SOku1VKzBYzBiRxo1N9yKDDBevBwUhoyHwKH4dWZdye51ltoBxcvhieLYX9x2QtcV_PvGaow"/>
+</div>
+<div class="row-span-2 rounded-2xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="group of riders" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBd0sjXZ3Zj4hboVYdTlxmbqz-ANQ9SVarhAPTGaTyKNXXd_PM1xGIkYTnVF46uRQ7WJNjleqmMxNt-RfHKpUKWJSH0iJmYjNEL373vPtlFaCdO2nGVszAlqq63oaLcKL2Ot695G0TjxXmGYQEChuHmVk8yWa3ygkA8joSbGI9grZ_LsNIscw2eQxOq-R3kulXx37ZigcOq1EVtGnkiI9sOM0BDiCWsrY6SVXxkX84s19YWFz3DQsjPiKwW-o7R2-kfGLnt0CHwYY"/>
+</div>
+<div class="rounded-2xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="charging bike" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6FFEzIVYZG9A7VUFwe01vFQg_WM0s_3KAPKM5Ocff6_Fo0k7QBjBzFiyIExZtAYZnHzam4OgD9dv53cQerAbjlbQ93t3n1KBecGx7OulugNu74ILU_CiMDljWEp6LP5McbrcdQdNXd9iaYfgOs1iVf0mmGGFzwbRPHUaL1u3fICI_T9yvyrcy1kuyWjMTxA3pLAjzk4yXjJFGdTDwU6E7uCrd-S2QP-09uvNVRcxjsTJ_cSmjFlHKjpwa0X7y89343R8x3M1nFQo"/>
+</div>
+<div class="col-span-2 rounded-2xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="winding road" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzNvw5L_KCCWDd1usPa-Wy3fL-XYBmCzcad-zGHVgZxSPTeLJf3b-ntK-0Oasp305VJsN4tcJts0SHS2k_gFO_D9ZYPO_kWiH8IUJjWjT2KrpK5_WTHWMuQT_GYrCnLzGhgq1cRyGPKmoMbf9oBKBh1M_x6KKWML76FlUXECvrrKbi8QLgf6riWnbO_crdVdqMEXJqgFEsHtaSAVsAYOX75RuXTWu5XUMYgLmSKzPHTgZ3MVuvAg2LpAkCmFUeR2SAYFmeKPgB6pM"/>
+</div>
+</div>
+</section>
+<!-- 10. Products (8 items grid) -->
+<section class="py-24 px-6 md:px-12 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<h2 class="text-4xl font-black tracking-tighter mb-16">Chọn phiên bản của bạn</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product 1 -->
+<div class="bg-white p-2 rounded-3xl group cursor-pointer border border-transparent hover:border-primary/10 transition-all">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden relative mb-8">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Volt Alpha Black" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCU6gzal_CZ6JDNyoV8hBW7M2N90ic8Oy9RWeBsp_4OzAzcB2lvB5m7Uzw6cXpCCbW5RSYL1SVT3doNDj6bMz9ljcqSNSLuorZUK3kJSlu7dkOqwkNUJNafYOf6nqzqpRCswM3MFOYbyvzxmJHjs7toQvfR3BgLjSb4OrsPnxKqQBoCCwWvN4o7BiNqjWE7s35RuA-vC7VSl-DHekaQgrukhu7Gm8m0FUJKbufbIIgaDMrXsOlN3Gpvc2RCq7p40AH2W40DmzDCF0"/>
+<div class="absolute top-6 left-6 px-4 py-1 bg-on-surface text-white text-[10px] font-bold rounded-full tracking-widest uppercase">Popular</div>
+</div>
+<div class="px-6 pb-8">
+<h4 class="text-2xl font-black mb-1">Volt Alpha</h4>
+<p class="text-secondary text-sm mb-6">Mạnh mẽ &amp; Bứt phá</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-black">45.000.000đ</span>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-white p-2 rounded-3xl group cursor-pointer border border-transparent hover:border-primary/10 transition-all">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden relative mb-8">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Volt Sigma Grey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRNbt4i4dXmsHtCWbEca6D5OEAKp0JBa3ut8av8SE-D4XWsfTTtup12EFf5dpIMl3AOAAlBmg-6eI_eEWwkC99bbLAuBgnyDZwiw2eg4lA31TxCJZ_-eV7ezSKnyg7y-VibdRXf3G6n7tumAjLOYVFMdqUyj8iWkTqlWhDogK__Xdvl-fTZdK7G09OPK1UD5X3qE96BOYQH1HNmmsvux76e1TnrS6951FaJ4wo76JbM_-c1chv2ubFMRU0TrkPb27w_qk9OJJc-to"/>
+</div>
+<div class="px-6 pb-8">
+<h4 class="text-2xl font-black mb-1">Volt Sigma</h4>
+<p class="text-secondary text-sm mb-6">Phong cách &amp; Linh hoạt</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-black">58.000.000đ</span>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-white p-2 rounded-3xl group cursor-pointer border border-transparent hover:border-primary/10 transition-all">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden relative mb-8">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Volt Delta Premium" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3ytS9klgc5wqpBSN5wP6EZ2CN5RuI9kYeFt4i-qU8xSEgTgHM4u-7KbseKG3VEUmU7NikPMbGWtOEGjlU-9zZveWncndVcL9ge2aYc9g4NDfQXWrlcamGr74iI9D5GVRL_n7S-QMmit7SxajGSqG2MtY2gc2ucdJYnCJ59pIxfg_blCcAEFfA97tDwl0QDw9GLTq69xO8l4qlFtKnJlHhDh16-7zwqVap583gmCKicIx1hjvASIojUJB2u04V81cmcv_T2zOvHoA"/>
+<div class="absolute top-6 left-6 px-4 py-1 bg-primary text-white text-[10px] font-bold rounded-full tracking-widest uppercase">Premium</div>
+</div>
+<div class="px-6 pb-8">
+<h4 class="text-2xl font-black mb-1">Volt Delta</h4>
+<p class="text-secondary text-sm mb-6">Kiệt tác Công nghệ</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-black">72.000.000đ</span>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-white p-2 rounded-3xl group cursor-pointer border border-transparent hover:border-primary/10 transition-all">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden relative mb-8">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Volt Zeta Concept" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCU6gzal_CZ6JDNyoV8hBW7M2N90ic8Oy9RWeBsp_4OzAzcB2lvB5m7Uzw6cXpCCbW5RSYL1SVT3doNDj6bMz9ljcqSNSLuorZUK3kJSlu7dkOqwkNUJNafYOf6nqzqpRCswM3MFOYbyvzxmJHjs7toQvfR3BgLjSb4OrsPnxKqQBoCCwWvN4o7BiNqjWE7s35RuA-vC7VSl-DHekaQgrukhu7Gm8m0FUJKbufbIIgaDMrXsOlN3Gpvc2RCq7p40AH2W40DmzDCF0"/>
+</div>
+<div class="px-6 pb-8">
+<h4 class="text-2xl font-black mb-1">Volt Zeta</h4>
+<p class="text-secondary text-sm mb-6">Tương lai của Tốc độ</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-black">85.000.000đ</span>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="bg-white p-2 rounded-3xl group cursor-pointer border border-transparent hover:border-primary/10 transition-all">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden relative mb-8">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Volt Epsilon Lite" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRNbt4i4dXmsHtCWbEca6D5OEAKp0JBa3ut8av8SE-D4XWsfTTtup12EFf5dpIMl3AOAAlBmg-6eI_eEWwkC99bbLAuBgnyDZwiw2eg4lA31TxCJZ_-eV7ezSKnyg7y-VibdRXf3G6n7tumAjLOYVFMdqUyj8iWkTqlWhDogK__Xdvl-fTZdK7G09OPK1UD5X3qE96BOYQH1HNmmsvux76e1TnrS6951FaJ4wo76JbM_-c1chv2ubFMRU0TrkPb27w_qk9OJJc-to"/>
+</div>
+<div class="px-6 pb-8">
+<h4 class="text-2xl font-black mb-1">Volt Epsilon</h4>
+<p class="text-secondary text-sm mb-6">Tối giản &amp; Tiện lợi</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-black">38.000.000đ</span>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 6 -->
+<div class="bg-white p-2 rounded-3xl group cursor-pointer border border-transparent hover:border-primary/10 transition-all">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden relative mb-8">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Volt Theta Urban" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3ytS9klgc5wqpBSN5wP6EZ2CN5RuI9kYeFt4i-qU8xSEgTgHM4u-7KbseKG3VEUmU7NikPMbGWtOEGjlU-9zZveWncndVcL9ge2aYc9g4NDfQXWrlcamGr74iI9D5GVRL_n7S-QMmit7SxajGSqG2MtY2gc2ucdJYnCJ59pIxfg_blCcAEFfA97tDwl0QDw9GLTq69xO8l4qlFtKnJlHhDh16-7zwqVap583gmCKicIx1hjvASIojUJB2u04V81cmcv_T2zOvHoA"/>
+</div>
+<div class="px-6 pb-8">
+<h4 class="text-2xl font-black mb-1">Volt Theta</h4>
+<p class="text-secondary text-sm mb-6">Sự lựa chọn Thành thị</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-black">42.000.000đ</span>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 7 -->
+<div class="bg-white p-2 rounded-3xl group cursor-pointer border border-transparent hover:border-primary/10 transition-all">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden relative mb-8">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Volt Kappa Sport" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCU6gzal_CZ6JDNyoV8hBW7M2N90ic8Oy9RWeBsp_4OzAzcB2lvB5m7Uzw6cXpCCbW5RSYL1SVT3doNDj6bMz9ljcqSNSLuorZUK3kJSlu7dkOqwkNUJNafYOf6nqzqpRCswM3MFOYbyvzxmJHjs7toQvfR3BgLjSb4OrsPnxKqQBoCCwWvN4o7BiNqjWE7s35RuA-vC7VSl-DHekaQgrukhu7Gm8m0FUJKbufbIIgaDMrXsOlN3Gpvc2RCq7p40AH2W40DmzDCF0"/>
+</div>
+<div class="px-6 pb-8">
+<h4 class="text-2xl font-black mb-1">Volt Kappa</h4>
+<p class="text-secondary text-sm mb-6">Thể thao &amp; Năng động</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-black">65.000.000đ</span>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 8 -->
+<div class="bg-white p-2 rounded-3xl group cursor-pointer border border-transparent hover:border-primary/10 transition-all">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden relative mb-8">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Volt Omega Limited" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRNbt4i4dXmsHtCWbEca6D5OEAKp0JBa3ut8av8SE-D4XWsfTTtup12EFf5dpIMl3AOAAlBmg-6eI_eEWwkC99bbLAuBgnyDZwiw2eg4lA31TxCJZ_-eV7ezSKnyg7y-VibdRXf3G6n7tumAjLOYVFMdqUyj8iWkTqlWhDogK__Xdvl-fTZdK7G09OPK1UD5X3qE96BOYQH1HNmmsvux76e1TnrS6951FaJ4wo76JbM_-c1chv2ubFMRU0TrkPb27w_qk9OJJc-to"/>
+<div class="absolute top-6 left-6 px-4 py-1 bg-black text-white text-[10px] font-bold rounded-full tracking-widest uppercase">Limited</div>
+</div>
+<div class="px-6 pb-8">
+<h4 class="text-2xl font-black mb-1">Volt Omega</h4>
+<p class="text-secondary text-sm mb-6">Đỉnh cao Chế tác</p>
+<div class="flex justify-between items-center">
+<span class="text-2xl font-black">99.000.000đ</span>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 11. Reviews -->
+<section class="py-24 px-6 md:px-12 bg-white">
+<div class="max-w-screen-xl mx-auto">
+<h2 class="text-4xl font-black tracking-tighter mb-16 text-center">Cảm nhận từ khách hàng</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-6">
+<div class="flex text-primary">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic text-lg text-on-surface">"Cảm giác lái cực kỳ bốc, không tiếng ồn. Đi trong phố rất nhẹ nhàng nhưng khi cần vọt thì xe đáp ứng ngay lập tức."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container rounded-full"></div>
+<div>
+<p class="font-bold">Minh Tuấn</p>
+<p class="text-xs text-secondary uppercase tracking-widest">Kỹ sư phần mềm</p>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="flex text-primary">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic text-lg text-on-surface">"Thiết kế của ZENITH thực sự khác biệt, ra đường ai cũng nhìn. Tiết kiệm chi phí vận hành hơn xe xăng rất nhiều."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container rounded-full"></div>
+<div>
+<p class="font-bold">Lan Hương</p>
+<p class="text-xs text-secondary uppercase tracking-widest">Designer</p>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="flex text-primary">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic text-lg text-on-surface">"Hệ thống pin rất tin cậy. Tôi đã đi được gần 1 năm và chưa bao giờ phải lo lắng về việc sạc hay độ bền."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-container rounded-full"></div>
+<div>
+<p class="font-bold">Hoàng Nam</p>
+<p class="text-xs text-secondary uppercase tracking-widest">Nhiếp ảnh gia</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 12. Offers (Form điền thông tin) -->
+<section class="py-24 px-6 md:px-12 bg-primary">
+<div class="max-w-screen-xl mx-auto bg-white/10 backdrop-blur-xl p-12 md:p-24 rounded-3xl border border-white/20 flex flex-col lg:flex-row justify-between items-center gap-12 overflow-hidden relative">
+<div class="absolute -right-24 -bottom-24 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+<div class="relative z-10 lg:w-1/2">
+<h2 class="text-white text-5xl font-black tracking-tighter mb-4">Ưu đãi Back to School</h2>
+<p class="text-white/80 text-xl max-w-md mb-8">Nhận ngay voucher trị giá <span class="font-bold text-white">5.000.000đ</span> và bộ phụ kiện bảo hộ cao cấp khi mua xe trong tháng này.</p>
+<div class="flex items-center gap-4 text-white/60">
+<span class="material-symbols-outlined" data-icon="verified">verified</span>
+<span class="text-sm font-bold uppercase tracking-widest">Cam kết bảo mật thông tin</span>
+</div>
+</div>
+<div class="relative z-10 lg:w-1/2 w-full">
+<form class="bg-white p-8 md:p-10 rounded-2xl shadow-2xl flex flex-col gap-5">
+<h3 class="text-on-surface text-2xl font-black tracking-tight mb-2">Đăng ký nhận ưu đãi</h3>
+<div>
+<label class="block text-[10px] font-black uppercase tracking-widest text-secondary mb-2">Họ và tên</label>
+<input class="w-full bg-surface border-0 px-4 py-4 rounded-lg text-sm focus:ring-2 focus:ring-primary" placeholder="Nguyễn Văn A" type="text"/>
+</div>
+<div>
+<label class="block text-[10px] font-black uppercase tracking-widest text-secondary mb-2">Số điện thoại</label>
+<input class="w-full bg-surface border-0 px-4 py-4 rounded-lg text-sm focus:ring-2 focus:ring-primary" placeholder="090 123 4567" type="tel"/>
+</div>
+<div>
+<label class="block text-[10px] font-black uppercase tracking-widest text-secondary mb-2">Showroom gần nhất</label>
+<select class="w-full bg-surface border-0 px-4 py-4 rounded-lg text-sm focus:ring-2 focus:ring-primary appearance-none">
+<option value="">Chọn showroom</option>
+<option value="hanoi-1">Showroom Hai Bà Trưng (Hà Nội)</option>
+<option value="hanoi-2">Showroom Cầu Giấy (Hà Nội)</option>
+<option value="hcm-1">Showroom Quận 1 (TP.HCM)</option>
+<option value="hcm-2">Showroom Quận 7 (TP.HCM)</option>
+<option value="danang">Showroom Hải Châu (Đà Nẵng)</option>
+</select>
+</div>
+<button class="bg-primary text-white py-5 rounded-lg font-black text-sm tracking-[0.2em] hover:bg-orange-800 transition-colors mt-2 uppercase shadow-lg shadow-primary/20">NHẬN VOUCHER NGAY</button>
+</form>
+</div>
+</div>
+</section>
+<!-- 13. FAQ -->
+<section class="py-24 px-6 md:px-12 bg-surface">
+<div class="max-w-screen-md mx-auto">
+<h2 class="text-4xl font-black tracking-tighter mb-12 text-center">Câu hỏi thường gặp</h2>
+<div class="space-y-4">
+<div class="bg-white p-8 rounded-2xl border border-outline-variant/10">
+<button class="flex justify-between items-center w-full text-left font-bold text-lg group">
+<span>Thời gian bảo hành pin là bao lâu?</span>
+<span class="material-symbols-outlined text-primary" data-icon="add">add</span>
+</button>
+</div>
+<div class="bg-white p-8 rounded-2xl border border-outline-variant/10">
+<button class="flex justify-between items-center w-full text-left font-bold text-lg group">
+<span>Tôi có thể sạc xe tại nhà không?</span>
+<span class="material-symbols-outlined text-primary" data-icon="add">add</span>
+</button>
+</div>
+<div class="bg-white p-8 rounded-2xl border border-outline-variant/10">
+<button class="flex justify-between items-center w-full text-left font-bold text-lg group">
+<span>ZENITH có trạm sạc nhanh không?</span>
+</button></div></div></div></section>
+
+<footer class="bg-neutral-50 dark:bg-neutral-950 w-full py-16 tonal-shift bg-neutral-50">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto items-start">
+<div class="space-y-6">
+<div class="text-xl font-black text-neutral-900 dark:text-white uppercase">LT BIKE</div>
+<p class="font-be-vietnam text-[0.7rem] font-medium tracking-wide text-neutral-500 uppercase">SẢN XUẤT TẠI VIỆT NAM. DẪN ĐẦU CÔNG NGHỆ XE ĐIỆN.</p>
+</div>
+<div>
+<h4 class="font-bold text-xs uppercase mb-6 text-neutral-900 dark:text-white">SẢN PHẨM</h4>
+<ul class="space-y-4 font-be-vietnam text-[0.7rem] font-medium tracking-wide text-neutral-500 uppercase">
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">WEAVER++</a></li>
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">WEAVER 200</a></li>
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">PHỤ KIỆN</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-xs uppercase mb-6 text-neutral-900 dark:text-white">CÔNG TY</h4>
+<ul class="space-y-4 font-be-vietnam text-[0.7rem] font-medium tracking-wide text-neutral-500 uppercase">
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">VỀ CHÚNG TÔI</a></li>
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">CHÍNH SÁCH BẢO HÀNH</a></li>
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">HỆ THỐNG CỬA HÀNG</a></li>
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">LIÊN HỆ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-xs uppercase mb-6 text-neutral-900 dark:text-white">NEWSLETTER</h4>
+<div class="flex gap-2">
+<input class="bg-surface-container-high border-none rounded p-3 text-xs flex-grow focus:ring-1 focus:ring-[#ff5c00]" placeholder="Email của bạn" type="email"/>
+<button class="bg-neutral-900 text-white px-4 rounded hover:bg-primary-container transition-all"><span class="material-symbols-outlined text-sm">send</span></button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/10">
+<p class="font-be-vietnam text-[0.7rem] font-medium tracking-wide text-neutral-500 uppercase">© 2024 LT BIKE VIETNAM. SẢN XUẤT TẠI VIỆT NAM.</p>
+</div>
+</footer>
+</body></html>

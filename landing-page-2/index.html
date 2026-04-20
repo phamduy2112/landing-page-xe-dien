@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LT BIKE - Dẫn Đầu Cuộc Cách Mạng Xanh</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#a73a00",
+                        "primary-container": "#ff5c00",
+                        "on-primary-fixed-variant": "#802a00",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#b3c5ff",
+                        "outline": "#8f7065",
+                        "tertiary": "#0054d6",
+                        "surface-dim": "#dadada",
+                        "secondary-container": "#e2dfde",
+                        "surface-bright": "#f9f9f9",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#370e00",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#a73a00",
+                        "on-tertiary-container": "#00266a",
+                        "on-primary-container": "#521800",
+                        "secondary": "#5f5e5e",
+                        "tertiary-container": "#618dff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#ffb59a",
+                        "on-surface-variant": "#5b4137",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-secondary-container": "#636262",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface": "#f9f9f9",
+                        "background": "#f9f9f9",
+                        "outline-variant": "#e4beb1",
+                        "primary-fixed": "#ffdbce",
+                        "secondary-fixed": "#e5e2e1",
+                        "surface-variant": "#e2e2e2",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#ffb59a",
+                        "on-tertiary-fixed": "#001849",
+                        "on-background": "#1a1c1c",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-container": "#eeeeee",
+                        "inverse-surface": "#2f3131",
+                        "tertiary-fixed": "#dae1ff",
+                        "on-tertiary-fixed-variant": "#003fa4",
+                        "on-surface": "#1a1c1c",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Be Vietnam Pro"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48; }
+        .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .industrial-shadow { box-shadow: 0 40px 100px -20px rgba(0,0,0,0.04); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- Section 1: Navigation (TopNavBar) -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-lg shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-neutral-900 dark:text-white uppercase">LT BIKE</div>
+<div class="hidden md:flex space-x-8">
+<a class="font-be-vietnam text-[0.75rem] font-bold tracking-widest uppercase text-[#ff5c00] border-b-2 border-[#ff5c00] pb-1" href="#">SẢN PHẨM</a>
+<a class="font-be-vietnam text-[0.75rem] font-bold tracking-widest uppercase text-neutral-600 dark:text-neutral-400 hover:text-[#ff5c00] transition-colors duration-300" href="#">CÔNG NGHỆ</a>
+<a class="font-be-vietnam text-[0.75rem] font-bold tracking-widest uppercase text-neutral-600 dark:text-neutral-400 hover:text-[#ff5c00] transition-colors duration-300" href="#">TRẠM SẠC</a>
+<a class="font-be-vietnam text-[0.75rem] font-bold tracking-widest uppercase text-neutral-600 dark:text-neutral-400 hover:text-[#ff5c00] transition-colors duration-300" href="#">CỘNG ĐỒNG</a>
+<a class="font-be-vietnam text-[0.75rem] font-bold tracking-widest uppercase text-neutral-600 dark:text-neutral-400 hover:text-[#ff5c00] transition-colors duration-300" href="#">HỖ TRỢ</a>
+</div>
+<div class="flex items-center space-x-6">
+<span class="material-symbols-outlined text-on-surface cursor-pointer">shopping_cart</span>
+<button class="bg-primary-container text-on-primary px-6 py-2 text-[0.75rem] font-bold tracking-widest rounded-lg active:opacity-80 active:scale-95 transition-all uppercase">ĐẶT NGAY</button>
+</div>
+</div>
+</nav>
+<!-- Section 2: Hero (Industrial Minimalist) -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 bg-surface-container-low -z-10"></div>
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<h1 class="text-[3.5rem] leading-[1.1] font-black tracking-tighter text-on-surface mb-6 uppercase">
+                    PHÁ VỠ <br/><span class="text-primary-container">GIỚI HẠN</span> <br/>CÔNG SUẤT.
+                </h1>
+<p class="text-lg text-secondary mb-10 max-w-md leading-relaxed">
+                    Dòng xe điện đầu tiên tại Việt Nam sở hữu hiệu năng tương đương xe xăng 200cc. Thiết kế tối giản, linh hồn công nghiệp.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-lg font-bold tracking-wide flex items-center justify-center gap-3 hover:shadow-xl transition-all">
+                        ĐĂNG KÝ LÁI THỬ <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border-2 border-outline-variant text-on-surface px-10 py-5 rounded-lg font-bold hover:bg-surface-container-high transition-all uppercase text-sm">
+                        Khám phá Weaver++
+                    </button>
+</div>
+</div>
+<div class="relative lg:h-[600px]">
+<img class="w-full h-full object-contain transform lg:scale-125 lg:translate-x-12" data-alt="Modern electric motorcycle in a minimalist industrial setting with clean white lighting and sharp shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdVd-eWTuxDg6mP6ro1n4a5vmJVxQxZakxk1aR4lg__Ngtl_QYMjq8rXqr9wX28ubETRgiNn3QyXcuNO8TOSQMgL96TvppD0q1XvzrgqiqTPUO-R_V1uKOEb5TVkUVTYzaJpiI65eYq0tppiGOoqB_w20plLqX32EDP491Wt25WdPePrwCL3-SCFMkSAS_3oZDQndD9P-S0Hp_9-ZSn_Jy-JDuanhLatfWdKD7iqMr6KZrkmMmyjFNZbPWgL0m5FCwyBouMf6_8WQ"/>
+</div>
+</div>
+</section>
+<!-- Section 3: Pain Points (The Aesthetic Problem) -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-20">
+<span class="label-md text-primary-container font-bold tracking-widest block mb-4 uppercase">THỰC TRẠNG</span>
+<h2 class="text-[2.5rem] font-extrabold tracking-tight">TẠI SAO BẠN CHƯA <br/>CHUYỂN SANG XE ĐIỆN?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-6">
+<span class="material-symbols-outlined text-4xl text-outline">battery_alert</span>
+<h3 class="text-xl font-bold uppercase">NỖI LO VỀ PIN</h3>
+<p class="text-secondary leading-relaxed">Sạc quá lâu, quãng đường di chuyển ngắn và sự thiếu hụt của các trạm sạc nhanh tại Việt Nam.</p>
+</div>
+<div class="space-y-6">
+<span class="material-symbols-outlined text-4xl text-outline">electric_moped</span>
+<h3 class="text-xl font-bold uppercase">HIỆU NĂNG YẾU</h3>
+<p class="text-secondary leading-relaxed">Đa số xe điện hiện nay có thiết kế rườm rà, động cơ không đủ mạnh để leo dốc hoặc chạy tốc độ cao.</p>
+</div>
+<div class="space-y-6">
+<span class="material-symbols-outlined text-4xl text-outline">design_services</span>
+<h3 class="text-xl font-bold uppercase">THIẾU CÁ TÍNH</h3>
+<p class="text-secondary leading-relaxed">Quá nhiều mẫu mã giống nhau, thiếu đi sự tinh tế và tính cá nhân hóa trong thiết kế phương tiện.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Solution An Hi (Personalized Design) -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl"></div>
+<img class="rounded-xl industrial-shadow relative z-10" data-alt="Close up shot of premium electric bike components, focus on texture and engineering detail in soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvtD3KZXC8paZwedV84_SJbYNaTxfrfDwSBIIDTGEeS7gtn1umhUQ6sxo_gxcsexaBR0PknZwx-3FeDRJn0VzvGy9gJPXFN26lMKwswR3w1uNTT5c39DU73kOnD9lFOnZog_GKEiT6IARD6L0slzoZZvfsKPKREWvpb6c8NRCY7xL_ETGGT4ZaJmk4GTSmR5GVSCTLMQkMAqMvqE6Xt7soVYJzMAEual-VjLpwl9s6gcwuIOIctnf65PRrFxJyEFbshUXGLymJjvc"/>
+</div>
+<div class="order-1 lg:order-2">
+<span class="label-md text-primary-container font-bold tracking-widest block mb-4 uppercase">GIẢI PHÁP LT BIKE</span>
+<h2 class="text-[2.5rem] font-extrabold tracking-tight mb-8">THIẾT KẾ CÁ NHÂN HÓA, TỐI ƯU CÔNG NĂNG.</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-white flex items-center justify-center rounded-lg shadow-sm shrink-0">
+<span class="material-symbols-outlined text-primary">engineering</span>
+</div>
+<div>
+<h4 class="font-bold mb-2 uppercase">Kỹ thuật tinh xảo</h4>
+<p class="text-secondary text-sm">Mỗi chiếc xe được lắp ráp thủ công với sự giám sát chặt chẽ từ đội ngũ kỹ sư hàng đầu.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-white flex items-center justify-center rounded-lg shadow-sm shrink-0">
+<span class="material-symbols-outlined text-primary">bolt</span>
+</div>
+<div>
+<h4 class="font-bold mb-2 uppercase">Sạc siêu nhanh</h4>
+<p class="text-secondary text-sm">Công nghệ sạc 20 phút đi được 100km - dẫn đầu thị trường xe điện toàn cầu.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-white flex items-center justify-center rounded-lg shadow-sm shrink-0">
+<span class="material-symbols-outlined text-primary">palette</span>
+</div>
+<div>
+<h4 class="font-bold mb-2 uppercase">Tùy biến phong cách</h4>
+<p class="text-secondary text-sm">Lựa chọn màu sắc và phụ kiện để chiếc xe thực sự phản ánh bản sắc của riêng bạn.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Portfolio (Bento Grid Layout) -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="label-md text-primary-container font-bold tracking-widest block mb-4 uppercase">DỰ ÁN THỰC TẾ</span>
+<h2 class="text-[2.5rem] font-extrabold tracking-tight uppercase">BẢN TUYÊN NGÔN TRÊN ĐƯỜNG PHỐ</h2>
+</div>
+<button class="text-primary-container font-bold flex items-center gap-2 group">
+                    XEM TẤT CẢ <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px]">
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Electric bike rider cruising through a modern cityscape during sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb5TAOQAqQsbeUJZiZSmS0s6atp73Z5JUnt-dad6lNv_j3HatM4ErqDaNOhhMOoYzKowX_AKi_ZJwf--f435FsiuCciH2rWexGSO2tNoyUepane4PXyoUbvjEbigdF28-2phhSollwBmqU4tuV8U3cEK3GYEX_aKc18DVMgiLOKfbp-i0jSPId28wgA42BvwWbEpqqvWpQrwTDragICxfK0L2W94l1CWvetW2Kl4MV37JN4OsON8ZuUS71u0OdeYzk5aEJRLH3zD4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8">
+<p class="text-white font-bold text-xl uppercase">Weaver++ Urban Stealth</p>
+</div>
+</div>
+<div class="md:col-span-2 relative group overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Before and after comparison of electric bike garage conversion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChw6cbs-6jjf8mFjrNfe8jO4y-9QxDSrbvLQnA7aID-i4pOFLmnKrDb-4apql9yL3xTXGe6XHpmOCdiUwf8lppS0avg6C9-8GkX8vzS-nZXVeO9_xaZLf5MIDlnhazou2Y8Yb8Imf6N9wQYJRKwqcBTqmNQPxP4D0mYJjyo4WxgvXnV5E9lwwD00b4-UX4bl140knJFExQNSVOv9LCjYlo2qMOAzrQ5TWPnhSvLuy_HZo2IIu1mmBDD3kxJYQnqANhSzqT0QFG8mA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
+<p class="text-white font-bold uppercase">The Transformation Lab</p>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Detailed engineering shot of battery unit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8XagR06epcn5-1-leDoNhc1r2q1eAk88OVOVHpxA60zWOFDCfckeyvucIjEeEf7DZYfViYyAqIoZcNVXyRS-RdwOve6bCstdki39u90ix_krO5uFwdleOQJpyFrZ7UTzuMXoxY9om7BGXiyit0IYIo5bLsz7KTL2kI-LkZfTEMkj45jpbOoMEkROl9b7rWXytnJOZ0MGvVzfhehg_eL5IKlNdImrSvhbcp5RPQI-jp_A-3hBCU8YcEYowlsy0wsfmfFJQOSb7fL0"/>
+</div>
+<div class="relative group overflow-hidden rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Biker helmet and gear in industrial setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjiQamgqnKBjw5ACEMp7RxM_2A7hBqt8JLPLN71WBkW7qikiTYaF8PTalOSI9pvzJJEaCuR0qSzaNRYWQ2qJPjDA5nBUD1-B80o0z9EJAdXcp7K7YvNfwhA89rNzdV4ECB-tjM1ogaUGYkvMUqNcFK8D2Hx1g-viI_u1J4b9QFKaTZcbECQUb3b0xIDlPqPs6d-dvky6L2eyolyCBl7VTa2J7AOiWhoi7J5vHHxwVgH6cl1oghxsnmbK4j8e16Y8Qltp4aUYISz7M"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Video/Story -->
+<section class="py-24 bg-neutral-900 text-white">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<h2 class="text-4xl font-black mb-12 uppercase">HÀNH TRÌNH TẠO NÊN WEAVER</h2>
+<div class="relative max-w-5xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-2xl group cursor-pointer">
+<img class="w-full h-full object-cover opacity-60" data-alt="Cinematic wide shot of a biker on a highway at night with city lights in the distance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLrDJVnM0su2N4TFNHr4lyfzMlN7DmesRZdvrmXLqmLefGAO-GWZypTUX8saG9qV3GzFzuluuXznd3LwYOkTtjhaeGDEOK7ODn7sUgNC5225tKg1V5Puwr-wQcNZUbjVn2HoeM3DetJEjK45cIUrPlFEwCGw6IdQ8r_f2hgCqgmcJRrSIRbjF2F-3Wt48zSf6uhJaO5iQfZOTP-lFNxGFKYbBwRhYrfkJxesGajCQaeBqd3QywhwZauG-F4pVVHrTKAG1DDIWQ0hM"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-20 h-20 bg-primary-container rounded-full flex items-center justify-center animate-pulse">
+<span class="material-symbols-outlined text-4xl text-white" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-8 left-8 text-left">
+<p class="text-sm font-bold tracking-widest uppercase opacity-70">Coming soon</p>
+<h3 class="text-2xl font-bold">Behind the Design: The Weaver++ Story</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Specifications (Bonus 1) -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<span class="label-md text-primary-container font-bold tracking-widest block mb-4 uppercase">THÔNG SỐ KỸ THUẬT</span>
+<h2 class="text-[2.5rem] font-extrabold tracking-tight">SỨC MẠNH VƯỢT TRỘI.</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-outline-variant/20 rounded-xl overflow-hidden">
+<div class="bg-surface-container-lowest p-10 flex flex-col items-center text-center">
+<span class="text-4xl font-black text-primary-container mb-2">7000W</span>
+<p class="text-[0.7rem] font-bold text-secondary uppercase">Công suất định danh</p>
+</div>
+<div class="bg-surface-container-lowest p-10 flex flex-col items-center text-center">
+<span class="text-4xl font-black text-primary-container mb-2">200KM</span>
+<p class="text-[0.7rem] font-bold text-secondary uppercase">Quãng đường / Sạc</p>
+</div>
+<div class="bg-surface-container-lowest p-10 flex flex-col items-center text-center">
+<span class="text-4xl font-black text-primary-container mb-2">3S</span>
+<p class="text-[0.7rem] font-bold text-secondary uppercase">0-50 KM/H</p>
+</div>
+<div class="bg-surface-container-lowest p-10 flex flex-col items-center text-center">
+<span class="text-4xl font-black text-primary-container mb-2">3H</span>
+<p class="text-[0.7rem] font-bold text-secondary uppercase">Sạc đầy tại nhà</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 8: Battery Tech (Bonus 2) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<span class="label-md text-tertiary font-bold tracking-widest block mb-4 uppercase">CÔNG NGHỆ PIN LITHIUM</span>
+<h2 class="text-[2.5rem] font-extrabold tracking-tight mb-6">TRÁI TIM BỀN BỈ.</h2>
+<p class="text-secondary mb-8 leading-relaxed">Sử dụng lõi pin cao cấp với tuổi thọ lên tới 10 năm. Hệ thống quản lý pin (BMS) thông minh tự động điều tiết nhiệt độ và hiệu suất, đảm bảo an toàn tuyệt đối trong mọi điều kiện thời tiết.</p>
+<div class="grid grid-cols-2 gap-6">
+<div class="p-6 bg-white rounded-lg">
+<span class="material-symbols-outlined text-tertiary mb-3">verified</span>
+<h4 class="font-bold text-sm uppercase">Bảo hành 10 năm</h4>
+</div>
+<div class="p-6 bg-white rounded-lg">
+<span class="material-symbols-outlined text-tertiary mb-3">ac_unit</span>
+<h4 class="font-bold text-sm uppercase">Chống nước IP67</h4>
+</div>
+</div>
+</div>
+<div class="relative">
+<img class="rounded-xl shadow-2xl" data-alt="Internal view of high-tech battery cells with blue ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNTTmi-mkezdA6Qbrsf05ox9FZnPVDNUwtPVbPKY_okj6K1t0XdXn_yjFa9sdKQZAzmncaO9k_J4p1yPLmDIiu64073gF0JrfSMeqAEqwQ1vk751ATFRqvGgq77jrd5JpDloGeAlJV73UEaLNqUnQGwC5eSJ4nkETPZwQVssC9n5W2HgpNCVYfAYgUERzdpZVJj9v6eeS4uqn6DlafQIFUuTt0ykLJIMgXVkVs4KlmJB9txGRjhcgA3x-GELHiy5R0N5wGvmBWSOM"/>
+</div>
+</div>
+</section>
+<!-- Section 9: Safety Features (Bonus 3) -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<span class="label-md text-primary-container font-bold tracking-widest block mb-4 uppercase">AN TOÀN TUYỆT ĐỐI</span>
+<h2 class="text-[2.5rem] font-extrabold tracking-tight uppercase">KIỂM SOÁT TRONG TẦM TAY</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-10 border border-outline-variant/30 rounded-2xl hover:border-primary-container transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary-container mb-6">lock</span>
+<h3 class="text-xl font-bold mb-4 uppercase">CHỐNG TRỘM THÔNG MINH</h3>
+<p class="text-secondary text-sm leading-relaxed">Cảnh báo và khóa xe từ xa thông qua ứng dụng LT BIKE, định vị chính xác vị trí xe 24/7.</p>
+</div>
+<div class="p-10 border border-outline-variant/30 rounded-2xl hover:border-primary-container transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary-container mb-6">settings_input_component</span>
+<h3 class="text-xl font-bold mb-4 uppercase">HỆ THỐNG PHANH CBS</h3>
+<p class="text-secondary text-sm leading-relaxed">Phanh kết hợp thông minh giúp dừng xe an toàn, không bị trượt bánh trong các tình huống khẩn cấp.</p>
+</div>
+<div class="p-10 border border-outline-variant/30 rounded-2xl hover:border-primary-container transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary-container mb-6">light_mode</span>
+<h3 class="text-xl font-bold mb-4 uppercase">HỆ THỐNG CHIẾU SÁNG LED</h3>
+<p class="text-secondary text-sm leading-relaxed">Đèn LED cường độ cao với góc chiếu rộng, đảm bảo tầm nhìn hoàn hảo trong điều kiện thiếu sáng.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 10: Cost Comparison (Bonus 4) -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<span class="label-md text-primary-container font-bold tracking-widest block mb-4 uppercase">SO SÁNH CHI PHÍ</span>
+<h2 class="text-[2.5rem] font-extrabold tracking-tight mb-8 uppercase">TIẾT KIỆM ĐẾN 90% CHI PHÍ VẬN HÀNH</h2>
+<div class="space-y-4">
+<div class="bg-surface-container-high p-6 rounded-lg flex justify-between items-center">
+<span class="font-bold uppercase text-sm">Xăng (100km)</span>
+<span class="text-error font-black">~65,000 VNĐ</span>
+</div>
+<div class="bg-primary-container/10 p-6 rounded-lg flex justify-between items-center border border-primary-container/20">
+<span class="font-bold uppercase text-sm text-primary-container">LT BIKE (100km)</span>
+<span class="text-primary font-black">~5,000 VNĐ</span>
+</div>
+<p class="text-xs text-secondary mt-6 italic">*Dựa trên giá điện và xăng trung bình tại Việt Nam năm 2024.</p>
+</div>
+</div>
+<div class="bg-neutral-900 p-12 rounded-2xl text-white">
+<h3 class="text-2xl font-black mb-8 uppercase">TỔNG KẾT SAU 3 NĂM</h3>
+<div class="flex items-end gap-2 mb-2">
+<span class="text-5xl font-black text-primary-container">45TR</span>
+<span class="text-xl font-bold uppercase mb-1">VNĐ</span>
+</div>
+<p class="text-neutral-400 text-sm mb-10">Số tiền bạn tiết kiệm được khi chuyển từ xe xăng sang Weaver++.</p>
+<button class="w-full py-4 bg-white text-black font-bold rounded-lg uppercase tracking-widest hover:bg-primary-container hover:text-white transition-all">Tính toán lộ trình của bạn</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 11: Reviews -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<span class="label-md text-primary-container font-bold tracking-widest block mb-4 uppercase">CỘNG ĐỒNG ĐAM MÊ</span>
+<h2 class="text-[2.5rem] font-extrabold tracking-tight uppercase">KHÁCH HÀNG NÓI GÌ</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-xl industrial-shadow">
+<div class="flex text-primary-container mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-secondary italic mb-6">"Gia tốc của chiếc xe thực sự khiến tôi bất ngờ. Nó không giống bất kỳ chiếc xe điện nào tôi từng đi trước đây. Cảm giác lái rất thật."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a satisfied customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsceMiYJlX55YS0RVCP8KisXhu7YWD0WcYx5NwpS6k_zCF8Un9PxqsoZNfqDNz8CLxbZaafuuHgm16XHtCvxu53xRbzIuBWN0L6jr3T6O6Gbmu0cSCETzK6LOyyxFi1VYLvtlkhJgte_76WLwWwm4ErJSUQocNtZR8kLFXv0UmpGFC7K314eXj22EDEsdGiQBmuUg231S47rneKd12N5WfpB5ZyjOTTSokjh68FlX6g1zMcWllr-foscLJVQMHM1MhWeesVyVt_5A"/>
+</div>
+<div>
+<h4 class="font-bold text-sm uppercase">Hoàng Nam</h4>
+<p class="text-xs text-neutral-400">Freelancer</p>
+</div>
+</div>
+</div>
+<!-- More reviews can be added here -->
+</div>
+</div>
+</section>
+<!-- Section 12: Working Process -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="text-[2.5rem] font-extrabold tracking-tight uppercase">QUY TRÌNH <br/>SỞ HỮU TRẢI NGHIỆM</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="relative">
+<span class="text-8xl font-black text-outline-variant/20 absolute -top-8 -left-4">01</span>
+<div class="relative z-10 pt-8">
+<h4 class="font-bold uppercase mb-2">Đăng ký tư vấn</h4>
+<p class="text-secondary text-sm">Để lại thông tin, đội ngũ chuyên gia sẽ liên hệ bạn ngay lập tức.</p>
+</div>
+</div>
+<div class="relative">
+<span class="text-8xl font-black text-outline-variant/20 absolute -top-8 -left-4">02</span>
+<div class="relative z-10 pt-8">
+<h4 class="font-bold uppercase mb-2">Lái thử xe</h4>
+<p class="text-secondary text-sm">Trải nghiệm thực tế tại Showroom hoặc tại nhà bạn.</p>
+</div>
+</div>
+<div class="relative">
+<span class="text-8xl font-black text-outline-variant/20 absolute -top-8 -left-4">03</span>
+<div class="relative z-10 pt-8">
+<h4 class="font-bold uppercase mb-2">Tùy biến &amp; Đặt hàng</h4>
+<p class="text-secondary text-sm">Chọn cấu hình, màu sắc và hoàn tất thanh toán dễ dàng.</p>
+</div>
+</div>
+<div class="relative">
+<span class="text-8xl font-black text-outline-variant/20 absolute -top-8 -left-4">04</span>
+<div class="relative z-10 pt-8">
+<h4 class="font-bold uppercase mb-2">Bàn giao tận nơi</h4>
+<p class="text-secondary text-sm">Nhận xe kèm hướng dẫn chi tiết và chế độ bảo hành 24/7.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 13: Contact Form & Hotline -->
+<section class="py-24 bg-surface-container-high">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-white rounded-3xl overflow-hidden shadow-xl grid grid-cols-1 lg:grid-cols-2">
+<div class="p-12 lg:p-20">
+<h2 class="text-3xl font-black mb-4 uppercase">BẮT ĐẦU HÀNH TRÌNH MỚI</h2>
+<p class="text-secondary mb-10">Đừng bỏ lỡ ưu đãi đặc biệt dành cho 100 khách hàng đầu tiên trong tháng này.</p>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<input class="w-full bg-surface border-none rounded-lg p-4 text-xs font-bold focus:ring-2 focus:ring-primary-container" placeholder="HỌ VÀ TÊN" type="text"/>
+<input class="w-full bg-surface border-none rounded-lg p-4 text-xs font-bold focus:ring-2 focus:ring-primary-container" placeholder="SỐ ĐIỆN THOẠI" type="text"/>
+</div>
+<input class="w-full bg-surface border-none rounded-lg p-4 text-xs font-bold focus:ring-2 focus:ring-primary-container" placeholder="EMAIL" type="email"/>
+<select class="w-full bg-surface border-none rounded-lg p-4 text-xs font-bold focus:ring-2 focus:ring-primary-container text-secondary">
+<option>CHỌN DÒNG XE QUAN TÂM</option>
+<option>WEAVER++</option>
+<option>WEAVER 200</option>
+</select>
+<button class="w-full py-5 bg-primary-container text-on-primary font-black uppercase tracking-widest rounded-lg hover:shadow-lg active:scale-[0.98] transition-all">GỬI YÊU CẦU TƯ VẤN</button>
+</form>
+</div>
+<div class="bg-neutral-900 p-12 lg:p-20 text-white flex flex-col justify-center">
+<div class="space-y-12">
+<div>
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4">headset_mic</span>
+<h3 class="text-xl font-bold uppercase mb-2">Hotline 24/7</h3>
+<p class="text-3xl font-black text-primary-container tracking-tighter">1900 633 623</p>
+</div>
+<div>
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4">location_on</span>
+<h3 class="text-xl font-bold uppercase mb-2">Showroom chính</h3>
+<p class="text-neutral-400 text-sm">45-47-49 Vũ Tông Phan, An Phú, Quận 2, TP. Hồ Chí Minh</p>
+</div>
+<div class="flex gap-6">
+<a class="w-10 h-10 border border-neutral-700 flex items-center justify-center rounded-full hover:bg-primary-container hover:border-primary-container transition-all" href="#">FB</a>
+<a class="w-10 h-10 border border-neutral-700 flex items-center justify-center rounded-full hover:bg-primary-container hover:border-primary-container transition-all" href="#">YT</a>
+<a class="w-10 h-10 border border-neutral-700 flex items-center justify-center rounded-full hover:bg-primary-container hover:border-primary-container transition-all" href="#">IG</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-neutral-50 dark:bg-neutral-950 w-full py-16 tonal-shift bg-neutral-50">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto items-start">
+<div class="space-y-6">
+<div class="text-xl font-black text-neutral-900 dark:text-white uppercase">LT BIKE</div>
+<p class="font-be-vietnam text-[0.7rem] font-medium tracking-wide text-neutral-500 uppercase">SẢN XUẤT TẠI VIỆT NAM. DẪN ĐẦU CÔNG NGHỆ XE ĐIỆN.</p>
+</div>
+<div>
+<h4 class="font-bold text-xs uppercase mb-6 text-neutral-900 dark:text-white">SẢN PHẨM</h4>
+<ul class="space-y-4 font-be-vietnam text-[0.7rem] font-medium tracking-wide text-neutral-500 uppercase">
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">WEAVER++</a></li>
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">WEAVER 200</a></li>
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">PHỤ KIỆN</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-xs uppercase mb-6 text-neutral-900 dark:text-white">CÔNG TY</h4>
+<ul class="space-y-4 font-be-vietnam text-[0.7rem] font-medium tracking-wide text-neutral-500 uppercase">
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">VỀ CHÚNG TÔI</a></li>
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">CHÍNH SÁCH BẢO HÀNH</a></li>
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">HỆ THỐNG CỬA HÀNG</a></li>
+<li><a class="hover:text-[#ff5c00] transition-transform duration-200 hover:translate-x-1 block" href="#">LIÊN HỆ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-xs uppercase mb-6 text-neutral-900 dark:text-white">NEWSLETTER</h4>
+<div class="flex gap-2">
+<input class="bg-surface-container-high border-none rounded p-3 text-xs flex-grow focus:ring-1 focus:ring-[#ff5c00]" placeholder="Email của bạn" type="email"/>
+<button class="bg-neutral-900 text-white px-4 rounded hover:bg-primary-container transition-all"><span class="material-symbols-outlined text-sm">send</span></button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/10">
+<p class="font-be-vietnam text-[0.7rem] font-medium tracking-wide text-neutral-500 uppercase">© 2024 LT BIKE VIETNAM. SẢN XUẤT TẠI VIỆT NAM.</p>
+</div>
+</footer>
+<!-- Fixed Floating Chat Action -->
+<div class="fixed bottom-8 right-8 z-50 flex flex-col gap-4">
+<a class="w-14 h-14 bg-primary-container text-on-primary rounded-full flex items-center justify-center shadow-2xl active:scale-90 transition-all" href="tel:1900633623">
+<span class="material-symbols-outlined">call</span>
+</a>
+<button class="w-14 h-14 bg-tertiary text-on-tertiary rounded-full flex items-center justify-center shadow-2xl active:scale-90 transition-all">
+<span class="material-symbols-outlined">chat_bubble</span>
+</button>
+</div>
+</body></html>
